@@ -57,7 +57,7 @@ def pets_by_breed(pet_shop, breed)
 end
 
 
-# #9
+# #9 dont understand why i can get 10 to work and not this one @_@
 # def find_pet_by_name(pet_shop, name)
 #     pet = [:name]
 #     for animal in pet_shop[:pets]
@@ -94,13 +94,31 @@ def find_pet_by_name(pet_shop, name)
 #-----------------------------------------------------------
 
 
-#11
-def remove_pet_by_name(pet_shop, name)
-  pet = [:name]
-  for animal in pet_shop[:pets]
-    if animal[:name].pop
+#11 #definitely doing something wrong with the delete part but cant figure it out O_O bagah!!!
+def remove_pet_by_name(pet_name, pet_shop)
+    pet = [:name]
+    for animal in pet_shop[:pets]
+      if animal[:name]
+        return pet.delete
+      end
     end
   end
-end
+ 
 
+
+#--------tried
+# result = nil
+
+# for pet_by_name in pet_shop[:pets][:name]
+#   result = pet_by_name if pet_by_name == name
+# end
+
+# if result != nil
+#   pet_shop[:pets][:name].delete(result)
+#   end
+# end
+#--------tried but this doesn't work cause it doesn't loop???
+
+# pet_shop[:name].delete(pet)
+# end
 
