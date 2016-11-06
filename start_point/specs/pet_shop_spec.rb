@@ -136,11 +136,11 @@ class TestPetShop < Minitest::Test
   end
 
 
-# 9
-#   def test_find_pet_by_name__returns_pet
-#     pet = find_pet_by_name(@pet_shop, "Arthur")
-#     assert_equal("Arthur", pet[:name])
-#   end
+# # 9
+  def test_find_pet_by_name__returns_pet
+    pet = find_pet_by_name(@pet_shop, "Arthur")
+    assert_equal("Arthur", pet[:name])
+  end
 
 
 #10
@@ -151,11 +151,11 @@ class TestPetShop < Minitest::Test
 
 
 # #11
-#   def test_remove_pet_by_name
-#     remove_pet_by_name(@pet_shop, "Arthur")
-#     pet = find_pet_by_name(@pet_shop,"Arthur")
-#     assert_equal(nil, pet)
-#   end
+  def test_remove_pet_by_name
+    remove_pet_by_name(@pet_shop, "Arthur")
+    pet = find_pet_by_name(@pet_shop,"Arthur")
+    assert_equal(nil, pet)
+  end
 
 
 # #12
@@ -174,11 +174,11 @@ class TestPetShop < Minitest::Test
 
 
 #14
-  def test_add_pet_to_customer
-    customer = @customers[0]
-    add_pet_to_customer(customer, @new_pet)
-    assert_equal(1, customer_pet_count(customer))
-  end
+  # def test_add_pet_to_customer
+  #   customer = @customers[0]
+  #   add_pet_to_customer(customer, @new_pet)
+  #   assert_equal(1, customer_pet_count(customer))
+  # end
 
 
 
