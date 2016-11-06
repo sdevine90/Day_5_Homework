@@ -108,8 +108,22 @@ def find_pet_by_name(pet_shop, name)
 # end
 
 
-#12 
-def add_pet_to_stock(pet_shop, stock_count)
-pet_shop[:pets].push(name)
-name.count
-end
+#12 do i need to create an empty array again to add the number that is returned.....brain fried
+# def add_pet_to_stock(pet_shop, name)
+# pet_shop[:pets].push(name)
+# return [:name].count
+# end
+
+
+# 13 think this relates to same as above
+# def customer_pet_count(customers_pet)
+#   customers[:pets].count
+# end
+
+# #14
+# def add_pet_to_customers(customers, new_pet)
+#   customers[:pets].push(1)
+# end
+
+
+

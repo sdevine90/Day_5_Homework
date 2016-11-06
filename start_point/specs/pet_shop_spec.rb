@@ -159,14 +159,14 @@ class TestPetShop < Minitest::Test
 
 
 # #12
-  def test_add_pet_to_stock
-    add_pet_to_stock(@pet_shop, @new_pet)
-    count = stock_count(@pet_shop)
-    assert_equal(7, count)
-  end
+  # def test_add_pet_to_stock
+  #   add_pet_to_stock(@pet_shop, @new_pet)
+  #   count = stock_count(@pet_shop)
+  #   assert_equal(7, count)
+  # end
 
 
-#13
+# 13
   # def test_customer_pet_count
   #   count = customer_pet_count(@customers[0])
   #   assert_equal(0, count)
@@ -174,11 +174,11 @@ class TestPetShop < Minitest::Test
 
 
 #14
-  # def test_add_pet_to_customer
-  #   customer = @customers[0]
-  #   add_pet_to_customer(customer, @new_pet)
-  #   assert_equal(1, customer_pet_count(customer))
-  # end
+  def test_add_pet_to_customer
+    customer = @customers[0]
+    add_pet_to_customer(customer, @new_pet)
+    assert_equal(1, customer_pet_count(customer))
+  end
 
 
 
