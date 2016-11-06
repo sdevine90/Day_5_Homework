@@ -82,8 +82,8 @@ def find_pet_by_name(pet_shop, name)
 
 #----------------using each for your for loop--------------
 
-#     # def find_pet_by_name(pet_shop_hash, pet_name)
-#     #   pet_shop_hash[:pets].each do |pet| <--- #.each is like a for loop and access each pet in the array and hashes
+#     # def find_pet_by_name(pet_shop, pet_name)
+#     #   pet_shop[:pets].each do |pet| <--- #.each is like a for loop and access each pet in the array and hashes
 #     #     if pet[:name] == pet_name
 #     #       return pet
 #     #     end
@@ -94,31 +94,22 @@ def find_pet_by_name(pet_shop, name)
 #-----------------------------------------------------------
 
 
-#11 #definitely doing something wrong with the delete part but cant figure it out O_O bagah!!!
-def remove_pet_by_name(pet_name, pet_shop)
-    pet = [:name]
-    for animal in pet_shop[:pets]
-      if animal[:name]
-        return pet.delete
-      end
-    end
-  end
- 
+#11 #definitely doing something wrong with the delete part but cant figure it out O_O bagah!!
 
-
-#--------tried
-# result = nil
-
-# for pet_by_name in pet_shop[:pets][:name]
-#   result = pet_by_name if pet_by_name == name
-# end
-
-# if result != nil
-#   pet_shop[:pets][:name].delete(result)
+# def remove_pet_by_name(pet_shop, pet_name)
+#   pet = [:name]
+#   for animal in pet_shop[:pets]
+#     if animal[:name] == name
+#       return pet.delete
+#     end
 #   end
-# end
-#--------tried but this doesn't work cause it doesn't loop???
-
-# pet_shop[:name].delete(pet)
+# else 
+#   return nil
 # end
 
+
+#12 
+def add_pet_to_stock(pet_shop, stock_count)
+pet_shop[:pets].push(name)
+name.count
+end
